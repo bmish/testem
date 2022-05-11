@@ -82,6 +82,7 @@ function mochaAdapter() {
         pending: 0,
         id: id++,
         name: name,
+        file: test.file,
         runDuration: test.duration,
         items: []
       };
@@ -105,6 +106,7 @@ function mochaAdapter() {
         pending: 0,
         id: id++,
         name: name,
+        file: test.file,
         runDuration: test.duration,
         items: items
       };
@@ -128,6 +130,7 @@ function mochaAdapter() {
         pending: 1,
         id: id++,
         name: name,
+        file: test.file,
         items: []
       };
       results.total++;
