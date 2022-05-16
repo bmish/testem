@@ -83,6 +83,7 @@ function mochaAdapter() {
         id: id++,
         name: name,
         file: test.file,
+        foobar: "testPass",
         runDuration: test.duration,
         items: []
       };
@@ -107,6 +108,7 @@ function mochaAdapter() {
         id: id++,
         name: name,
         file: test.file,
+        foobar: "testFail",
         runDuration: test.duration,
         items: items
       };
@@ -131,6 +133,7 @@ function mochaAdapter() {
         id: id++,
         name: name,
         file: test.file,
+        foobar: "testPending",
         items: []
       };
       results.total++;
